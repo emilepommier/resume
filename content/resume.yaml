@@ -1,43 +1,70 @@
 basics:
-  name: Jérémy Brixhe
-  label: Senior Backend Developer (Freelance)
+  name: Emile Pommier
+  label: Technical Product Manage at Lumen Technologies
   summary: >-
-    Senior Software Engineer (Freelance) with a long experience in backend development
-    and infrastructure management with modern
-    tools ([Kubernetes](https://kubernetes.io), [Terraform](https://terraform.io), [Google Cloud](https://cloud.google.com/)).
-    My aim is to provide the ideal solution that fits best the needs of my customers.
+    Product Management | Customer Success Manager | Management of Innovation 
 
-    Testing has become an integral part of my approach to backend development.
-    In addition to systematic unit testing, I use tools like [Skaffold](https://skaffold.dev/) to develop my applications and connect to the infrastructure.
-
-    ### Specialties
-
-    Rust, Kotlin, Golang, Cloud Computing, Terraform, Ansible, Google Cloud Platform, Kubernetes,
-    Nginx Ingress Controller, Monitoring (Thanos, Prometheus, AlertManager, Grafana, Loki), LinkerD,
-    Java, Spring, Hibernate, Web Services (RESTFull apis, GraphQL, JSON, JWT).
-
-  phone: +32 492 43 02 35
-  email: jeremy@brixhe.dev
+  phone: +33 6 74 59 92 76
+  email: emile.pommier@proton.me
   location:
-    city: Brussels,
-    region: Belgium
+    city: Paris,
+    region: France
   profiles:
-    - network: linkedin
-      username: jeremy-brixhe
-      url: https://www.linkedin.com/in/jeremy-brixhe/
+    - network: LinkedIn
+      username: emilepommier
+      url: https://www.linkedin.com/in/emilepommier/
 work:
-  - company: Streamroot
-    position: Scalability and Reliability Engineer
-    description: Backend developement in Rust and Golang.
-    website: https://streamroot.io/
+  - company: Lumen Technologies
+    position: Product Manager Customer Success
+    description: Customer Success and Operationnal management.
+    website: https://lumen.com/
     location: Paris, France
-    startDate: "2019-03"
-    endDate: "2020-12"
+    startDate: "2022-01"
+    endDate: ""
     summary: >-
       Development of peer matching and remote configuration service for our peer-to-peer network.
       Manage multiple Kubernetes clusters with dozens of nodes in production spread over
       multiple availability zones in the Cloud. At peak, the system support millions of
       concurrent Websocket connections and tens of thousands of requests per second.
+    highlights:
+      - Set-up cloud architecture, from VPC, Firewall and Bastion to **Kubernetes** clusters and virtual machines
+      - Designed and built a tracker powered by **Rust** to match peers in a peer-to-peer network
+      - >-
+        Configured infrastructure to handle large traffic increase (5 to 10 times) in a short period of time (20-30 minutes)
+        using **Horizontal Pod Autoscaler**
+      - Built and maintained Restful API gateway using **Golang**
+      - Set-up the Continuous Integration with lint, unit test and delivery process to ensure product quality
+    technologies:
+      - Rust
+      - Golang
+      - Google Cloud platform
+      - Kubernetes
+      - Linkerd
+      - Nginx Ingress Controller
+      - GCE Ingress Controller
+      - Kustomize
+      - Helm
+      - Thanos
+      - Prometheus
+      - Grafana
+      - Loki
+      - Kafka
+      - Flink
+      - Apache Druid
+      - Apache Superset
+      - Terraform
+      - Ansible
+      - Mozilla SOPS
+      - CircleCI
+  - company: Streamroot
+    position: Technical Product Manager
+    description: Product Manager for Compatibility and Product Owner for CDN Load Balancer.
+    website: https://streamroot.io/
+    location: Paris, France
+    startDate: "2018-01"
+    endDate: "2022-01"
+    summary: >-
+      Responsible of the CDN Load Balancer product and the compatibility of our SDK across all product line.(Mesh delivery, eCDN, Load Balancer)
     highlights:
       - Set-up cloud architecture, from VPC, Firewall and Bastion to **Kubernetes** clusters and virtual machines
       - Designed and built a tracker powered by **Rust** to match peers in a peer-to-peer network

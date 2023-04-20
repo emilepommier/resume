@@ -4,11 +4,11 @@
   "description": "Resume using Json Resume",
   "main": "index.js",
   "scripts": {
-    "build": "mkdir -p out && npm run process-resume && npm run export:html && npm run export:puppeteer",
+    "build": "if not exist out ( mkdir out && npm run process-resume && npm run export:html && npm run export:puppeteer ) Else ( npm run process-resume && npm run export:html && npm run export:puppeteer )",
     "start": "nodemon --watch ./content --watch ./src -e js,yaml,hbs,css,jfq --exec npm run build",
     "process-resume": "jfq -a -q src/filter_work_references.jfq content/resume.yaml > out/resume.json",
     "deprecated:export:pdf": "resume export -r out/resume.json --format pdf --theme macchiato out/export.pdf",
-    "export:puppeteer": "puppeteer --margin-top 15mm --margin-right 10mm --margin-bottom 15mm --margin-left 10mm --format A4 --no-sandbox --wait-until networkidle0 print out/export.html out/jeremy_brixhe_resume.pdf",
+    "export:puppeteer": "puppeteer --margin-top 15mm --margin-right 10mm --margin-bottom 15mm --margin-left 10mm --format A4 --no-sandbox --wait-until networkidle0 print out/export.html out/emile_pommier_resume.pdf",
     "export:html": "resume export -r out/resume.json --theme ./src/theme out/export.html",
     "postinstall": "patch-package"
   },
