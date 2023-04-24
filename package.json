@@ -6,10 +6,11 @@
   "scripts": {
     "build": "if not exist out ( mkdir out && npm run process-resume && npm run export:html && npm run export:puppeteer ) Else ( npm run process-resume && npm run export:html && npm run export:puppeteer )",
     "start": "nodemon --watch ./content --watch ./src -e js,yaml,hbs,css,jfq --exec npm run build",
-    "process-resume": "jfq -a -q src/filter_work_references.jfq content/resume.yaml > out/resume.json",
-    "deprecated:export:pdf": "resume export -r out/resume.json --format pdf --theme macchiato out/export.pdf",
+    "process-resume": "jfq -a -q src/filter_work_references.jfq content/resume.yaml > resume.json",
+    "deprecated:export:pdf": "resume export -r out/resume.json --format pdf --theme kendall-plus out/emile_pommier_resume.pdf",
+    "old:export:html": "resume export -r resume.json --theme ./src/theme out/export_old.html",
+    "export:html": "resume export -r resume.json --theme @anthonyjdella/jsonresume-theme-anthonyjdella-elegant out/export.html",
     "export:puppeteer": "puppeteer --margin-top 15mm --margin-right 10mm --margin-bottom 15mm --margin-left 10mm --format A4 --no-sandbox --wait-until networkidle0 print out/export.html out/emile_pommier_resume.pdf",
-    "export:html": "resume export -r out/resume.json --theme ./src/theme out/export.html",
     "postinstall": "patch-package"
   },
   "author": "Jeremy Brixhe",
@@ -28,6 +29,13 @@
     "jsonresume-theme-print-flexbox": "^1.0.0",
     "jsonresume-theme-spartan": "^0.3.0",
     "jsonresume-theme-stackoverflow": "^1.4.0",
+    "jsonresume-theme-kendall-plus": "^0.3.0",
+    "jsonresume-theme-eloquent-mod": "^4.24.0",
+    "@anthonyjdella/jsonresume-theme-anthonyjdella-elegant": "latest",
+    "@anthonyjdella/jsonresume-theme-anthonyjdella-caffeine": "latest",
+    "@anthonyjdella/jsonresume-theme-anthonyjdella-stackoverflow": "^1.0.8",
+    "@anthonyjdella/jsonresume-theme-anthonyjdella-spartan": "^1.0.1",
+    "@anthonyjdella/jsonresume-theme-anthonyjdella-mocha-responsive": "^1.0.4",
     "moment": "^2.24.0",
     "puppeteer-cli": "^1.5.1",
     "resume-cli": "^3.0.4"

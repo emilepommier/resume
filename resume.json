@@ -2,6 +2,7 @@
   "basics": {
     "name": "Emile Pommier",
     "label": "Technical Product Manager & Customer Success at Lumen Technologies",
+    "image": "https://en.gravatar.com/userimage/195772450/95f7056d6ff8f14e13c24cefca26968a.jpeg",
     "summary": "Product Management | Product Owner | Customer Success Manager | Management of Innovation",
     "phone": "+33 6 74 59 92 76",
     "email": "emile.pommier@proton.me",
@@ -19,22 +20,19 @@
   },
   "work": [
     {
-      "company": "Lumen Technologies",
+      "name": "Lumen Technologies",
       "position": "Product Manager - Customer Success Manager",
       "description": "Product Management, Customer Success and Operational management.",
       "website": "https://lumen.com/",
       "location": "Paris, France",
       "startDate": "2022-01",
-      "endDate": "",
+      "endDate": "present",
       "summary": "Responsible for the CDN Load Balancer product and the customer relations related to the presentation and integration of our products.",
       "highlights": [
         "(PM) Product Roadmap & Vision",
         "(PM) Feature PRD writing and high level technical definitions",
         "(PM) KPIs definition and tracking",
         "(PM) Market and competitors research",
-        "(PM) Creation of public documentation and materials for marketing and sales teams",
-        "(PM) Creation of materials for internal knowledge sharing",
-        "(PM) Product and technical (video streaming and player ecosystem) trainings to newcomers",
         "(CS) Maintaining the best customer and partner relationship possible",
         "(CS) In charge of products presentation during trade shows and for all our new prospects",
         "(CS) In charge of customers relations from on-boarding, to POC, to production deployment",
@@ -43,14 +41,14 @@
       ]
     },
     {
-      "company": "Streamroot",
+      "name": "Streamroot",
       "position": "Technical Product Manager - Product Owner",
       "description": "Product Manager for Compatibility and Product Owner for CDN Load Balancer",
       "website": "https://streamroot.io/",
       "location": "Paris, France",
       "startDate": "2018-01",
       "endDate": "2022-01",
-      "summary": "Responsible for the CDN Load Balancer product and the compatibility of our SDK across all product line.(Mesh delivery, eCDN, Load Balancer). Product Owner of the Client team (Web plugins, Android and iOS SDKs, Windows/Xbox SDK), developing 3 different products in Scrum and Kanban.",
+      "summary": "Responsible for the CDN Load Balancer product and the compatibility of our SDK across all product line (Mesh delivery, eCDN, Load Balancer). Product Owner of the Client team (Web plugins, Android and iOS SDKs, Windows/Xbox SDK), developing 3 different products in Scrum and Kanban.",
       "highlights": [
         "(PM) Product Roadmap & Vision",
         "(PM) Feature PRD writing and high level technical definitions",
@@ -68,10 +66,10 @@
       ]
     },
     {
-      "company": "Netatmo",
+      "name": "Netatmo",
       "position": "Product Manager",
       "description": "Product Manager assistant for a new solution in partnership with Legrand.",
-      "website": "https://www.cartier.com/",
+      "website": "https://www.netatmo.com/",
       "location": "Boulogne-Billancourt, France",
       "startDate": "2016-07",
       "endDate": "2017-06",
@@ -85,8 +83,9 @@
       ]
     },
     {
-      "company": "Cartier",
+      "name": "Cartier",
       "position": "R&D Engineer - Test Manager",
+      "website": "https://www.cartier.com/",
       "location": "Swiss",
       "startDate": "2014-08",
       "endDate": "2015-07",
@@ -100,7 +99,6 @@
   "education": [
     {
       "institution": "Toulouse Business School",
-      "location": "Toulouse, France",
       "area": "Management of Technological Innovation",
       "studyType": "Advanced Master",
       "startDate": "2015-09",
@@ -108,36 +106,22 @@
     },
     {
       "institution": "ECAM Lyon",
-      "location": "Lyon, France",
       "area": "Ingénieur Arts et Métiers",
       "studyType": "Master's degree",
       "startDate": "2009-09",
       "endDate": "2015-01"
-    },
-    {
-      "institution": "Ecole professionnelle de Porrentruy",
-      "location": "Porrentruy, Swiss",
-      "area": "Introductory course in watchmaking",
-      "startDate": "2015-01",
-      "endDate": "2015-07"
     }
   ],
   "skills": [
     {
-      "name": "Computing",
+      "name": "Computing & Software",
       "level": "Master",
       "keywords": [
         "Docker",
         "HTML",
         "CSS",
         "JavaScript",
-        "Git"
-      ]
-    },
-    {
-      "name": "Software",
-      "level": "Master",
-      "keywords": [
+        "Git",
         "Atlassian (Jira/Confluence)",
         "GitHub Projects",
         "aha!",
@@ -167,11 +151,7 @@
   ],
   "interests": [
     {
-      "name": "Smart Home",
-      "keywords": [
-        "Self-Hosting",
-        "IoT"
-      ]
+      "name": "Smart Home"
     },
     {
       "name": "Watchmaking"
@@ -182,7 +162,7 @@
   ],
   "meta": {
     "theme": "elegant",
-    "generated": "2023-04-24T11:44:42.632Z"
+    "generated": "2023-04-24T14:25:08.013Z"
   },
   "references": []
 }

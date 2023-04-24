@@ -1,0 +1,762 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Emile Pommier</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+  <style>/* Utils */
+/*----- Colors -----*/
+/*----- Fonts -----*/
+/*----- Dimensions and sizes -----*/
+/* Base */
+@font-face {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Josefin Sans Light"), local("JosefinSans-Light"),
+    url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Josefin Sans Bold"), local("JosefinSans-Bold"),
+    url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Lato Light Italic"), local("Lato-LightItalic"),
+    url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Lato Italic"), local("Lato-Italic"),
+    url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Lato Bold Italic"), local("Lato-BoldItalic"),
+    url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"),
+    url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf)
+      format("truetype");
+}
+
+html {
+  background: white;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: white;
+  margin: 50px 0 100px;
+  letter-spacing: 0.3px;
+  color: #39424b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+
+h3.bold {
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+h4.bold {
+  font-weight: 700;
+}
+
+h5 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+
+h5.italic {
+  font-style: italic;
+}
+
+h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #2895f1;
+}
+
+a .fa-external-link {
+  font-size: 10px;
+  vertical-align: text-top;
+}
+
+p,
+li {
+  font-size: 11px;
+}
+
+blockquote {
+  font-size: 11px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 10px 25px;
+}
+
+em {
+  color: #999;
+}
+
+ul {
+  margin: 10px 0 0;
+  -webkit-padding-start: 25px;
+}
+
+ul li {
+  padding-left: 10px;
+}
+
+ul.minimal {
+  list-style: none;
+  padding: 0;
+}
+
+ul.minimal li {
+  margin-bottom: 3px;
+  padding-left: 0;
+}
+
+ul.two-column {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 28px;
+  column-count: 2;
+  column-gap: 28px;
+}
+
+ul.two-column li {
+  padding-left: 0;
+}
+
+@page {
+  size: A4;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.keyline {
+  width: 45px;
+  margin: 8px 0 10px;
+  border-top: 1px solid #56817a;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.profile-pic {
+  margin-top: -5px;
+  margin-right: 18px;
+}
+
+.profile-pic img {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 2px solid #56817a;
+}
+
+.summary {
+  margin: 5px 0 5px;
+}
+
+.sublink {
+  font-size: 70%;
+  font-weight: 200;
+  color: dimgray;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Layouts */
+.page {
+  background: white;
+  width: 800px;
+  min-height: 792px;
+  display: block;
+  margin: 0 auto;
+  border-top: 10px solid #56817a;
+  padding: 36px 22px 30px 34px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-column {
+  float: left;
+  width: 170px;
+  margin-right: 20px;
+  word-wrap: break-word;
+}
+
+.right-column {
+  width: auto;
+  overflow: hidden;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 36px 0 30px;
+    box-shadow: none;
+  }
+
+  .page .resume-header,
+  .page .resume-content {
+    padding: 0 22px 0 34px;
+  }
+
+  /* .container {
+    page-break-inside: avoid;
+  } */
+
+  .work-container .item {
+    page-break-inside: avoid;
+  }
+
+  .fa-external-link {
+    display: none;
+  }
+}
+
+/* Components */
+.info-tag-container {
+  margin-bottom: 5px;
+}
+
+.info-tag-container .fa {
+  font-size: 14px;
+  width: 12px;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.info-tag-container .fa.fa-map-marker {
+  font-size: 16px;
+}
+
+.info-tag-container .fa.fa-mobile {
+  font-size: 18px;
+}
+
+.info-tag-container .fa.fa-envelope-o {
+  font-size: 12px;
+}
+
+.info-tag-container .fa.fa-desktop {
+  font-size: 11px;
+}
+
+.info-tag-container .fa.fa-external-link {
+  width: auto;
+  font-size: inherit;
+  vertical-align: text-top;
+}
+
+.info-tag-container .info-text {
+  font-size: 12px;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 139px;
+}
+
+.references-container .fa {
+  font-size: 14px;
+}
+
+.education-container .location {
+  padding-bottom: 6px;
+  font-weight: 400;
+}
+
+.education-container .specialization {
+  text-transform: none;
+  font-style: italic;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-skill {
+  font-size: 80%;
+}
+
+.skill {
+  margin: 0.15em;
+  padding: 0.15em;
+  background: ghostwhite;
+  border-radius: 5px;
+}
+
+li > p {
+  margin: 2px;
+}
+
+.technologies {
+  margin-top: 10px;
+}
+
+.position {
+  font-size: 11px;
+  font-weight: 300;
+}
+
+.location {
+  font-size: 11px;
+  font-weight: 400;
+}</style>
+</head>
+
+<body>
+  <main id="resume" class="page">
+    <header class="resume-header clearfix">
+        <div class="profile-header pull-left">
+            <h1>Emile Pommier</h1>
+            <h2>Technical Product Manager &amp; Customer Success at Lumen Technologies</h2>
+        </div>
+        <div class="profile-pic pull-right">
+        </div>
+    </header>
+    <div class="resume-content">
+      <aside class="left-column">
+        <div class="container about-container">
+            <div class="title">
+                <h3>About Me</h3>
+                <div class="keyline"></div>
+            </div>
+            <div class="info-tag-container">
+                <i class="fa fa-map-marker-alt"></i>
+            
+                <h6 class="info-text"> Paris, France  </h6>
+            </div>
+        
+            <div class="info-tag-container">
+                <i class="fa fa-envelope"></i>
+            
+                <h6 class="info-text">
+                    <a href="mailto:emile.pommier@proton.me" target="_blank">
+                        emile.pommier@proton.me
+                    </a>
+                </h6>
+            </div>
+            <div class="info-tag-container">
+                <i class="fa fa-mobile-alt"></i>
+            
+                <h6 class="info-text">+33 6 74 59 92 76</h6>
+            </div>
+        
+            <div class="info-tag-container">
+                <i class="fab fa-linkedin-in"></i>
+            
+                <h6 class="info-text">
+                    <a href="https://www.linkedin.com/in/emilepommier/" target="_blank">
+                        emilepommier
+                    </a>
+                </h6>
+            </div>    </section>
+        <div class="skills-container">
+            <section class="container">
+                <div class="title">
+                    <h3>Computing</h3>
+                    <div class="keyline"></div>
+                </div>        <div class="minimal flex-container">
+                    <h6 class="main-skill skill">Docker</h6>
+                    <h6 class="main-skill skill">HTML</h6>
+                    <h6 class="main-skill skill">CSS</h6>
+                    <h6 class="main-skill skill">JavaScript</h6>
+                    <h6 class="main-skill skill">Git</h6>
+                </div>
+            </section>
+            <section class="container">
+                <div class="title">
+                    <h3>Software</h3>
+                    <div class="keyline"></div>
+                </div>        <div class="minimal flex-container">
+                    <h6 class="main-skill skill">Atlassian (Jira/Confluence)</h6>
+                    <h6 class="main-skill skill">GitHub Projects</h6>
+                    <h6 class="main-skill skill">aha!</h6>
+                    <h6 class="main-skill skill">Figma</h6>
+                    <h6 class="main-skill skill">MS Office</h6>
+                    <h6 class="main-skill skill">CAO - SolidWorks, PTC Creo, Catia V5</h6>
+                </div>
+            </section>
+            <section class="container">
+                <div class="title">
+                    <h3>Methodology</h3>
+                    <div class="keyline"></div>
+                </div>        <div class="minimal flex-container">
+                    <h6 class="main-skill skill">Scrum</h6>
+                    <h6 class="main-skill skill">Kanban</h6>
+                </div>
+            </section>
+        </div>
+            <div class="container languages-container">
+                <div class="title">
+                    <h3>Languages</h3>
+                    <div class="keyline"></div>
+                </div>
+                <ul class="minimal">
+                        <li>
+                            <h6>English <em>(Full professional)</em></h6>
+                        </li>
+                        <li>
+                            <h6>French <em>(Native or bilingual)</em></h6>
+                        </li>
+                </ul>
+            </div>
+            <div class="container interests-container">
+                <div class="title">
+                    <h3>Interests</h3>
+                    <div class="keyline"></div>
+                </div>
+                    <section class="item">
+                            <h4 class="bold">Smart Home</h4>
+                            <ul class="minimal">
+                                    <li>Self-Hosting</li>
+                                    <li>IoT</li>
+                            </ul>
+                    </section>
+                    <section class="item">
+                            <h4 class="bold">Watchmaking</h4>
+                    </section>
+                    <section class="item">
+                            <h4 class="bold">Blacksmithing</h4>
+                    </section>
+            </div>
+      </aside>
+      <div class="right-column">
+        <div class="container summary-container">
+            <div class="title">
+                <h3>Summary</h3>
+                <div class="keyline"></div>
+            </div>    <p class="summary">
+                <p>Product Management | Product Owner | Customer Success Manager | Management of Innovation</p>
+        
+            </p>
+        </div>
+        <div class="container work-container">
+            <div class="title">
+                <h3>Experience</h3>
+                <div class="keyline"></div>
+            </div>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h5 class="italic pull-right">
+                        <span class="startDate">01/2022</span>
+                        <span class="endDate"> - Invalid date</span>
+                    </h5>
+                </div>
+        
+                <h4>Product Management, Customer Success and Operational management.</h4>
+        
+        
+                <p class="summary"><p>Responsible for the CDN Load Balancer product and the customer relations related to the presentation and integration of our products.</p>
+        </p>
+        
+                <ul>
+                    <li><p>(PM) Product Roadmap &amp; Vision</p>
+        </li>
+                    <li><p>(PM) Feature PRD writing and high level technical definitions</p>
+        </li>
+                    <li><p>(PM) KPIs definition and tracking</p>
+        </li>
+                    <li><p>(PM) Market and competitors research</p>
+        </li>
+                    <li><p>(PM) Creation of public documentation and materials for marketing and sales teams</p>
+        </li>
+                    <li><p>(PM) Creation of materials for internal knowledge sharing</p>
+        </li>
+                    <li><p>(PM) Product and technical (video streaming and player ecosystem) trainings to newcomers</p>
+        </li>
+                    <li><p>(CS) Maintaining the best customer and partner relationship possible</p>
+        </li>
+                    <li><p>(CS) In charge of products presentation during trade shows and for all our new prospects</p>
+        </li>
+                    <li><p>(CS) In charge of customers relations from on-boarding, to POC, to production deployment</p>
+        </li>
+                    <li><p>(CS) In charge of all the customer support and operationals</p>
+        </li>
+                    <li><p>(CS) Supporting Sales and Pre-sales teams answering public offers</p>
+        </li>
+                </ul>
+            </section>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h5 class="italic pull-right">
+                        <span class="startDate">01/2018</span>
+                        <span class="endDate"> - 01/2022</span>
+                    </h5>
+                </div>
+        
+                <h4>Product Manager for Compatibility and Product Owner for CDN Load Balancer</h4>
+        
+        
+                <p class="summary"><p>Responsible for the CDN Load Balancer product and the compatibility of our SDK across all product line.(Mesh delivery, eCDN, Load Balancer). Product Owner of the Client team (Web plugins, Android and iOS SDKs, Windows/Xbox SDK), developing 3 different products in Scrum and Kanban.</p>
+        </p>
+        
+                <ul>
+                    <li><p>(PM) Product Roadmap &amp; Vision</p>
+        </li>
+                    <li><p>(PM) Feature PRD writing and high level technical definitions</p>
+        </li>
+                    <li><p>(PM) KPIs definition and tracking</p>
+        </li>
+                    <li><p>(PM) Market and competitors research</p>
+        </li>
+                    <li><p>(PM) Creation of public documentation and materials for marketing and sales teams</p>
+        </li>
+                    <li><p>(PM) Creation of materials for internal knowledge sharing</p>
+        </li>
+                    <li><p>(PM) Product and technical (video streaming and player ecosystem) trainings to newcomers</p>
+        </li>
+                    <li><p>(PO) Weekly planning and daily follow-up</p>
+        </li>
+                    <li><p>(PO) Scrum events (Sprint Planning, Scrum Daily, Sprint Review, Sprint Retrospective)</p>
+        </li>
+                    <li><p>(PO) Backlog grooming</p>
+        </li>
+                    <li><p>(PO) Functional validation of features</p>
+        </li>
+                    <li><p>(PO) Release management</p>
+        </li>
+                    <li><p>(PO) Bugs qualification, prioritization and follow up</p>
+        </li>
+                </ul>
+            </section>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h5 class="italic pull-right">
+                        <span class="startDate">07/2016</span>
+                        <span class="endDate"> - 06/2017</span>
+                    </h5>
+                </div>
+        
+                <h4>Product Manager assistant for a new solution in partnership with Legrand.</h4>
+        
+        
+                <p class="summary"><p>Help to manage the development of a solution composed of new in-wall smart switches &amp; power outlets. They allow to remotely control lights, rolling shutters &amp; home appliances from your smartphone or via voice control.</p>
+        </p>
+        
+                <ul>
+                    <li><p>Coordination of the works of several teams of different trades</p>
+        </li>
+                    <li><p>Work with the hardware development team (mechanics &amp; electronics)</p>
+        </li>
+                    <li><p>Work with the embedded software development, backend &amp; frontend teams</p>
+        </li>
+                    <li><p>Participate in the applications' development &amp; design (iOS &amp; Android)</p>
+        </li>
+                    <li><p>Assist the supply chain &amp; industrialization team</p>
+        </li>
+                </ul>
+            </section>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h5 class="italic pull-right">
+                        <span class="startDate">08/2014</span>
+                        <span class="endDate"> - 07/2015</span>
+                    </h5>
+                </div>
+        
+        
+        
+                <p class="summary"><p>Improving tooling for watch part stamping.</p>
+        </p>
+        
+                <ul>
+                    <li><p>Increase the life of stamping tools by optimizing heat treatments, trying new steels and coatings - increase up to 3 times lifetime and reduction in machining costs.</p>
+        </li>
+                    <li><p>Research new technologies to achieve cleaning, annealing and lubrication of stamped components</p>
+        </li>
+                </ul>
+            </section>
+        </div>
+        <div class="container education-container">
+            <div class="title">
+            <h3>Education</h3>
+            <div class="keyline"></div>
+        </div> 
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                Toulouse Business School (<span class="location">Toulouse, France</span>) <span class="position"></span>
+            </h3>
+            <h5 class="italic pull-right">
+                <span class="startDate">09/2015</span>
+                <span class="endDate"> - 07/2016</span>
+            </h5>
+        </div>
+         
+                <h5 class="location">Toulouse, France</h5>
+        
+                <h4>Advanced Master Management of Technological Innovation</h4>
+        
+              </section>
+        
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                ECAM Lyon (<span class="location">Lyon, France</span>) <span class="position"></span>
+            </h3>
+            <h5 class="italic pull-right">
+                <span class="startDate">09/2009</span>
+                <span class="endDate"> - 01/2015</span>
+            </h5>
+        </div>
+         
+                <h5 class="location">Lyon, France</h5>
+        
+                <h4>Master&#x27;s degree Ingénieur Arts et Métiers</h4>
+        
+              </section>
+        
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                Ecole professionnelle de Porrentruy (<span class="location">Porrentruy, Swiss</span>) <span class="position"></span>
+            </h3>
+            <h5 class="italic pull-right">
+                <span class="startDate">01/2015</span>
+                <span class="endDate"> - 07/2015</span>
+            </h5>
+        </div>
+         
+                <h5 class="location">Porrentruy, Swiss</h5>
+        
+                <h4>Introductory course in watchmaking</h4>
+        
+              </section>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

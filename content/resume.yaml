@@ -1,9 +1,9 @@
 basics:
   name: Emile Pommier
-  label: Technical Product Manage at Lumen Technologies
+  label: Technical Product Manager & Customer Success at Lumen Technologies
+  image: https://en.gravatar.com/userimage/195772450/95f7056d6ff8f14e13c24cefca26968a.jpeg
   summary: >-
-    Product Management | Customer Success Manager | Management of Innovation 
-
+    Product Management | Product Owner | Customer Success Manager | Management of Innovation
   phone: +33 6 74 59 92 76
   email: emile.pommier@proton.me
   location:
@@ -14,27 +14,26 @@ basics:
       username: emilepommier
       url: https://www.linkedin.com/in/emilepommier/
 work:
-  - company: "Lumen Technologies"
-    position: Product Manager - Customer Success
-    description: Customer Success and Operationnal management.
+  - name: "Lumen Technologies"
+    position: Product Manager - Customer Success Manager
+    description: Product Management, Customer Success and Operational management.
     website: https://lumen.com/
     location: Paris, France
     startDate: "2022-01"
-    endDate: ""
+    endDate: "present"
     summary: >-
-      Development of peer matching and remote configuration service for our peer-to-peer network.
-      Manage multiple Kubernetes clusters with dozens of nodes in production spread over
-      multiple availability zones in the Cloud. At peak, the system support millions of
-      concurrent Websocket connections and tens of thousands of requests per second.
+      Responsible for the CDN Load Balancer product and the customer relations related to the presentation and integration of our products.
     highlights:
-      - Set-up cloud architecture, from VPC, Firewall and Bastion to **Kubernetes** clusters and virtual machines
-      - Designed and built a tracker powered by **Rust** to match peers in a peer-to-peer network
-      - >-
-        Configured infrastructure to handle large traffic increase (5 to 10 times) in a short period of time (20-30 minutes)
-        using **Horizontal Pod Autoscaler**
-      - Built and maintained Restful API gateway using **Golang**
-      - Set-up the Continuous Integration with lint, unit test and delivery process to ensure product quality
-  - company: "Streamroot"
+      - (PM) Product Roadmap & Vision
+      - (PM) Feature PRD writing and high level technical definitions
+      - (PM) KPIs definition and tracking
+      - (PM) Market and competitors research
+      - (CS) Maintaining the best customer and partner relationship possible
+      - (CS) In charge of products presentation during trade shows and for all our new prospects
+      - (CS) In charge of customers relations from on-boarding, to POC, to production deployment
+      - (CS) In charge of all the customer support and operationals
+      - (CS) Supporting Sales and Pre-sales teams answering public offers
+  - name: "Streamroot"
     position: Technical Product Manager - Product Owner
     description: Product Manager for Compatibility and Product Owner for CDN Load Balancer
     website: https://streamroot.io/
@@ -42,7 +41,7 @@ work:
     startDate: "2018-01"
     endDate: "2022-01"
     summary: >-
-      Responsible of the CDN Load Balancer product and the compatibility of our SDK across all product line.(Mesh delivery, eCDN, Load Balancer).
+      Responsible for the CDN Load Balancer product and the compatibility of our SDK across all product line (Mesh delivery, eCDN, Load Balancer).
       Product Owner of the Client team (Web plugins, Android and iOS SDKs, Windows/Xbox SDK), developing 3 different products in Scrum and Kanban.
     highlights:
       - (PM) Product Roadmap & Vision
@@ -58,25 +57,26 @@ work:
       - (PO) Functional validation of features
       - (PO) Release management
       - (PO) Bugs qualification, prioritization and follow up
-  - company: "Netatmo"
+  - name: "Netatmo"
     position: Product Manager
     description: Product Manager assistant for a new solution in partnership with Legrand.
-    website: https://www.cartier.com/
+    website: https://www.netatmo.com/
     location: Boulogne-Billancourt, France
     startDate: "2016-07"
     endDate: "2017-06"
     summary: >-
-      Help managing the development of solution composed of new in-wall smart switches & power outlets.
-      They allows to remotely control lights, rolling shutters & home appliances from your smartphone or via voice control.
+      Help to manage the development of a solution composed of new in-wall smart switches & power outlets.
+      They allow to remotely control lights, rolling shutters & home appliances from your smartphone or via voice control.
     highlights:
       - Coordination of the works of several teams of different trades
       - Work with the hardware development team (mechanics & electronics)
-      - Work with the embedded software developmentn, backend & frontend teams
-      - Participate in the applications development & design (iOS & Android)
+      - Work with the embedded software development, backend & frontend teams
+      - Participate in the applications' development & design (iOS & Android)
       - Assist the supply chain & industrialization team
-  - company: "Cartier Horlogerie"
+  - name: "Cartier"
     position: R&D Engineer - Test Manager
-    location: Suisse
+    website: https://www.cartier.com/
+    location: Swiss
     startDate: "2014-08"
     endDate: "2015-07"
     summary: >-
@@ -86,23 +86,17 @@ work:
       - Research new technologies to achieve cleaning, annealing and lubrication of stamped components
 education:
   - institution: "Toulouse Business School"
-    location: Toulouse, France
     area: Management of Technological Innovation
     studyType: Advanced Master
     startDate: "2015-09"
     endDate: "2016-07"
   - institution: "ECAM Lyon"
-    location: Lyon, France
     area: Ingénieur Arts et Métiers
     studyType: Master's degree
     startDate: "2009-09"
     endDate: "2015-01"
-  - institution: Ecole professionnelle de Porrentruy
-    location: Porrentruy, Suisse
-    area: Introductory course in watchmaking
-    endDate: "2015-01"
 skills:
-  - name: "Computing"
+  - name: "Computing & Software"
     level: Master
     keywords:
       - Docker
@@ -110,9 +104,6 @@ skills:
       - CSS
       - JavaScript
       - Git 
-  - name: "Software"
-    level: Master
-    keywords:
       - Atlassian (Jira/Confluence)
       - GitHub Projects
       - aha!
@@ -131,9 +122,6 @@ languages:
     fluency: Native or bilingual
 interests:
   - name: Smart Home
-    keywords:
-      - Self-Hosting
-      - IoT
   - name: Watchmaking
   - name: Blacksmithing
 meta:
