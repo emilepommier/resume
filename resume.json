@@ -7,7 +7,7 @@
     "phone": "+33 6 74 59 92 76",
     "email": "emile.pommier@proton.me",
     "location": {
-      "city": "Paris,",
+      "city": "Paris",
       "region": "France"
     },
     "profiles": [
@@ -162,7 +162,7 @@
   ],
   "meta": {
     "theme": "elegant",
-    "generated": "2023-04-24T14:25:08.013Z"
+    "generated": "2023-04-27T11:43:05.409Z"
   },
   "references": []
 }

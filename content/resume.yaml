@@ -7,7 +7,7 @@ basics:
   phone: +33 6 74 59 92 76
   email: emile.pommier@proton.me
   location:
-    city: Paris,
+    city: Paris
     region: France
   profiles:
     - network: LinkedIn
